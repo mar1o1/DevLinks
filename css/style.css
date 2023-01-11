@@ -82,7 +82,7 @@ body *{
     transform: translateY(-50%);
 }
 .light #switch button{
-          animation: move 0.4s forwards;
+          animation: move-back 0.4s forwards;
       
 }
 #switch span{
@@ -167,12 +167,16 @@ footer{
         to{
             left: 50%;
         }
-        from{
-            left: 50%;
+       
         }
-        to{
-            left: 0;
-        }
-    }
+        @keyframes move-back{
+            from{
+                left: 50%;
+            }
+            to{
+                left: 0;
+            }
+           
+            }
 
 
