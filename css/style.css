@@ -15,6 +15,7 @@ body{
 background-image: var(--bg) ;
 background-size: cover;
 background-repeat: no-repeat;
+height: 100vh;
  
 }
 
@@ -138,5 +139,19 @@ ul li a:hover{
 }
 footer{
     text-align: center;
+}
+/*media query*/
+@media screen and (min-width: 700px){
+    ody{
+        background-image: var(--bg) 
+    }
+
+    :root{
+        --bg: url(../assets/bg-desk.jpg);
+    }
+    .light{
+        --bg: url(../assets/bg-desk-light.jpg);
+        
+    }
 }
 
