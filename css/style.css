@@ -164,5 +164,15 @@ footer{
             left: 50%;
         }
     }
+    @keyframes moveback {
+        from{
+            left: 50%;
+        }
+        to{
+            left: 0;
+        }
+
+        
+    }
 
 
