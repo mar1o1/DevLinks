@@ -78,6 +78,7 @@ body *{
     background: #fff var(--switchbg) no-repeat center;
     border: 0;
     border-radius: 50%;
+    cursor: pointer;
     
 
     position: absolute;
@@ -156,7 +157,7 @@ footer{
 
 /*media query*/
 @media screen and (min-width: 700px){
-    ody{
+    body{
         background-image: var(--bg) 
     }
 
@@ -165,9 +166,45 @@ footer{
     }
     .light{
         --bg: url(../assets/bg-desk-light.jpg);
-        
     
    }
+
+   #switch button{
+       animation: slide-out .2s;
+   }
+   .light #switch button{
+    animation: slide-in 0.4s forwards;
+}
+}
+@media screen and (min-width: 568px){
+    #switch button{
+        animation: slide-out .2s;
+    }
+    .light #switch button{
+     animation: slide-in 0.4s forwards;
+ }
+
+}
+
+@media screen and (min-width: 667px){
+    #switch button{
+        animation: slide-out .2s;
+    }
+    .light #switch button{
+     animation: slide-in 0.4s forwards;
+ }
+}
+
+@media screen and (min-width: 768px){
+    #switch button{
+        animation: slide-out .2s;
+    }
+    .light #switch button{
+     animation: slide-in 0.4s forwards;
+ }
+}
+    
+
 
   /*animation*/
     @keyframes slide-in{
@@ -188,4 +225,3 @@ footer{
         }
     }
 
-} 
