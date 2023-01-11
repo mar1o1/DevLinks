@@ -80,7 +80,7 @@ body *{
     transform: translateY(-50%);
 
 animation: move 0.4s forwards;
-animation: move-back 0.4s forwards;
+animation: moveback 0.2s forwards;
     
 }
    
@@ -169,7 +169,7 @@ footer{
         }
        
         }
-        @keyframes move-back{
+        @keyframes moveback{
             from{
                 left: 50%;
             }
