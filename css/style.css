@@ -32,6 +32,9 @@ body *{
     --switchbg: url(../assets/sun.svg);
 
 }
+.light #switch button{
+    animation: move-back 0.4s forwards;
+}
 .container{
     width: 100%;
     max-width: 588px;
@@ -80,7 +83,7 @@ body *{
 }
 .light #switch button{
           animation: move 0.4s forwards;
-          animation: moveback 0.4s forwards;
+      
 }
 #switch span{
     display: block;
@@ -165,7 +168,8 @@ footer{
             left: 50%;
         }
     }
-    @keyframes moveback {
+
+    @keyframes move-back {
         from{
             left: 50%;
         }
