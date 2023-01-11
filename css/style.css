@@ -31,6 +31,9 @@ body *{
   --surface-color-hover:rgba(0, 0, 0, 0.2);  
     --switchbg: url(../assets/sun.svg);
 }
+.light #switch button{
+    animation: slide-in 0.4s forwards;
+}
 
 
 .container{
@@ -78,13 +81,13 @@ body *{
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
-
-animation: move 0.4s forwards;
-animation: moveback 0.2s forwards;
-    
+    animation: slide-out .2s; 
 }
-   
-         
+#switch button:hover{
+    outline: 8px solid var(--surface-color-hover);
+    cursor: pointer;
+}
+          
 #switch span{
     display: block;
     width: 64px;
@@ -160,23 +163,20 @@ footer{
   }  
 
   /*animation*/
-    @keyframes move{
+    @keyframes slide-in{
         from{
-            left: Q;
+            left: 0;
         }
         to{
             left: 50%;
         }
-       
+    }
+     
+    @keyframes slide-out{
+        from{
+            left: 50%;
         }
-        @keyframes moveback{
-            from{
-                left: 50%;
-            }
-            to{
-                left: 0;
-            }
-           
-            }
-
-
+        to{
+            left: 0;
+        }
+    }
