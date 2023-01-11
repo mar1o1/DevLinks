@@ -80,6 +80,7 @@ body *{
 }
 .light #switch button{
           animation: move 0.4s forwards;
+          animation: moveback 0.4s forwards;
 }
 #switch span{
     display: block;
