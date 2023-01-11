@@ -79,7 +79,7 @@ body *{
     transform: translateY(-50%);
 }
 .light #switch button{
-          animation: move 0.4s forwards
+          animation: move 0.4s ease-in-out;
 }
 #switch span{
     display: block;
