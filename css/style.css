@@ -167,17 +167,12 @@ footer{
         to{
             left: 50%;
         }
-    }
-
-    @keyframes move-back {
-        from{
+        tp{
             left: 50%;
         }
         to{
             left: 0;
         }
-
-        
     }
 
 
