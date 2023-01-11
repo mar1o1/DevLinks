@@ -30,11 +30,9 @@ body *{
   --surface-color:rgba(255, 255, 255, 0.2);
   --surface-color-hover:rgba(0, 0, 0, 0.2);  
     --switchbg: url(../assets/sun.svg);
+}
 
-}
-.light #switch button{
-    animation: move-back 0.4s forwards;
-}
+
 .container{
     width: 100%;
     max-width: 588px;
@@ -82,12 +80,11 @@ body *{
     transform: translateY(-50%);
 
 animation: move 0.4s forwards;
-    animation: move-back 0.4s forwards;
+animation: move-back 0.4s forwards;
+    
 }
-
+   
          
-      
-
 #switch span{
     display: block;
     width: 64px;
