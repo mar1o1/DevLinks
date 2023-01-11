@@ -79,8 +79,7 @@ body *{
     transform: translateY(-50%);
 }
 .light #switch button{
-right: 0;
-left:initial;
+          animation: move 0.4s ease-in-out;
 }
 #switch span{
     display: block;
@@ -152,6 +151,18 @@ footer{
     .light{
         --bg: url(../assets/bg-desk-light.jpg);
         
+    
+   }
+  }  
+
+  /*animation*/
+    @keyframes move{
+        from{
+            left: Q;
+        }
+        to{
+            left: 50%;
+        }
     }
-}
+
 
