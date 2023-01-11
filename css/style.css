@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 :root{
     --text-color: #fff;
@@ -16,12 +17,15 @@ background-image: var(--bg) ;
 background-size: cover;
 background-repeat: no-repeat;
 height: 100vh;
+
  
 }
 
 body *{
     font-family: 'inter', sans-serif;
     color: var(--text-color);
+    
+
 }
     .light{
     --text-color: #000;
@@ -147,6 +151,9 @@ footer{
     text-align: center;
     margin: 10px;
 }
+
+
+
 /*media query*/
 @media screen and (min-width: 700px){
     ody{
@@ -161,7 +168,6 @@ footer{
         
     
    }
-  }  
 
   /*animation*/
     @keyframes slide-in{
@@ -181,3 +187,5 @@ footer{
             left: 0;
         }
     }
+
+} 
